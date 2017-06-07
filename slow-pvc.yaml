@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-gluster-slow
+  name: pvc-slow
   annotations:
-    volume.beta.kubernetes.io/storage-class: gluster-slow
+    volume.beta.kubernetes.io/storage-class: slow-storage
 spec:
   accessModes:
   - ReadWriteMany
